@@ -1,3 +1,5 @@
+sudo apt-get update
+
 sudo apt-get install jadx
 sudo apt-get install dex2jar
 sudo apt-install jd-gui
