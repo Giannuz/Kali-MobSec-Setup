@@ -7,10 +7,6 @@ sudo apt-get install jd-gui
 sudo apt install docker.io
 docker pull opensecurity/mobile-security-framework-mobsf
 
-# run mobsf comment next line if not needed
-sudo docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
-
-
 # APKHunt section
 git clone https://github.com/Cyber-Buddy/APKHunt.git
 cd APKHunt
@@ -30,4 +26,4 @@ python3 -m pip install -r src/requirements.txt
 
 # to add to alias 
 echo "alias mobsf='sudo docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest'" >> ~/.zshrcgo 
-run apkhunt.go >> ~/.zshrcgo
+echo "alias apkhunt='go run /home/michele/APKHunt/apkhunt.go'" >> ~/.zshrcgo
